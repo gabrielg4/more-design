@@ -1,0 +1,57 @@
+header {
+    padding-top: 4.3rem;
+    padding-bottom: 4.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #FDFDFD;
+   
+    .container {
+        .free {
+            background-color: #FDFDFD;
+            display: inline-block;
+            padding: 0.8rem 1.6rem;
+            border-radius: 122px;
+            margin-bottom: -8.9rem;
+            span {
+                font-family: 'Atyp Text';
+                font-size: 1.3rem;
+                line-height: 16px;
+                color: #F04264;
+                letter-spacing: -0.01em;
+            }
+        }
+        @include flex(row, center, space-between);
+        .more-design {
+            width: 100%;
+            max-width: 11.9rem;
+            @include flex(row, center, space-between);
+            a {
+                font-family: 'Atyp Text';
+                text-decoration: underline;
+                line-height: 160%;
+                color: $brand-black;
+            }
+        }
+        .redes-sociais  {
+            width: 100%;
+            max-width: 7.5rem;
+            @include flex(row, center, space-between);
+        }
+    }
+    @include responsive(600px) {
+        .container {
+            .more-design {
+                display: none;
+            }
+        }
+    }
+    @include responsive(468px) {
+        .container {
+            .logo {
+                max-width: 20.8rem;
+            }
+        }
+    }
+}

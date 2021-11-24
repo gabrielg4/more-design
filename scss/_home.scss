@@ -1,0 +1,221 @@
+.s-hero {
+    padding-top: 20.9rem;
+    padding-bottom: 9.5rem;
+    background-color: #F2F3F9;
+    .container {
+        @include flex(row, flex-start, space-between);
+        .info {
+            width: 100%;
+            max-width: 55.5rem;
+            p {
+                font-size: 18px;
+                line-height: 160%;
+                color: #606272;
+                margin-top: 2.6rem;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                margin-top: 4rem;
+                input {
+                    background: #FDFDFD;
+                    box-shadow: 0px 15px 30px -10px rgba(204, 206, 219, 0.4);
+                    border-radius: 122px;
+
+                    width: 100%;
+                    max-width: 55.5rem;
+                    height: 6.9rem;
+                    padding: 2rem;
+                }
+                button {
+                    width: 100%;
+                    max-width: 19.3rem;
+                    height: 4.8rem;
+                    display: inline-block;
+                    background-color: $brand-black;
+                    border-radius: 97.6px;
+                    margin-left: -20rem;
+                    cursor: pointer;
+
+                    font-family: 'Atyp Text';
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    letter-spacing: -0.01em;
+                    color: #FDFDFD;
+                    transition: all .3s;
+                    &:hover {
+                        background-color: #040408;
+                    }
+                }
+            }
+
+            .empresas {
+                margin-top: 5.6rem;
+            }
+            .people {
+                @include flex(row, center, space-between);
+                width: 100%;
+                max-width: 25rem;
+                margin-top: 6rem;
+                .avaliacao {
+                    margin-left: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 0.6rem;
+                    }
+                    strong,
+                    span {
+                        font-size: 1.2rem;
+                        line-height: 15px;
+                        color: #666671;
+                    }
+                }
+            }
+        }
+        .area-image {
+            width: 100%;
+            max-width: 52rem;
+            height: 67.2rem;
+            position: relative;
+            .image {
+                img {
+                    position: absolute;
+                    &.one {
+                        width: 100%;
+                        max-width: 63.6rem;
+                        height: 62.9rem;
+                        object-fit: cover;
+                        z-index: 2;
+                        bottom: 0;
+                        right: -6rem;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(1100px) {
+        .container {
+            flex-direction: column;
+            .info {
+                margin: 0 auto;
+                h1, p {
+                    text-align: center;
+                }
+                .empresas {
+                    margin: 5.6rem auto;
+                }
+                .people {
+                    margin: 6rem auto;
+                }
+            }
+            .area-image {
+                margin: 0 auto;
+            }
+        }
+    }
+    @include responsive(600px) {
+        .container {
+           .area-image {
+               max-width: 45rem;
+               height: 58.2rem;
+               .image {
+                   img {
+                       &.one {
+                           height: 46.9rem;
+                       }
+                   }
+               }
+           }
+        }
+    }
+    @include responsive(468px) {
+        .container {
+           .area-image {
+               max-width: 34rem;
+               height: 44.2rem;
+               .image {
+                   img {
+                       &.one {
+                           height: 34.9rem;
+                       }
+                   }
+               }
+           }
+        }
+    }
+    @include responsive(360px) {
+        .container {
+           .area-image {
+               height: 43.2rem;
+
+           }
+        }
+    }
+}
+
+
+.s-cards {
+    margin-top: -6.6rem;
+    padding-bottom: 11.6rem;
+    .container {
+     .all-cards {
+        @include flex(row, center, space-between);
+        .card {
+            width: 100%;
+            max-width: 38.4rem;
+            height: 21.6rem;
+            background: #FDFDFD;
+            box-shadow: 0px 24px 44px -11px rgba(181, 183, 192, 0.3);
+            border-radius: 12px;
+            padding-top: 4.6rem;
+            padding-left: 4.7rem;
+            h3 {
+                font-family: 'Atyp Text';
+                font-weight: 600;
+                font-size: 2.2rem;
+                line-height: 150%;
+                margin-top: 3rem;
+                color: $brand-black;
+            }
+            span {
+                line-height: 160%;
+                color: #606272;
+                margin-top: 0.3rem;
+            }
+        }
+     }  
+    }
+    @include responsive(1200px) {
+        .container {
+            .all-cards {
+                .card {
+                    max-width: 35.4rem;
+                }
+            }
+        }
+    }
+    @include responsive(1100px) {
+        .container {
+            .all-cards {
+                .card {
+                    max-width: 31.4rem;
+                    padding-left: 2.7rem;
+                }
+            }
+        }
+    }
+
+    @include responsive(991px) {
+        .container {
+            .all-cards {
+                flex-direction: column;
+                .card {
+                    max-width: 100%;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

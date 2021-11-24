@@ -1,0 +1,15 @@
+h1 {
+    font-family: 'Atyp Text';
+    font-weight: 600;
+    font-size: 6.4rem;
+    line-height: 77px;
+    letter-spacing: -0.01em;
+    color: $brand-black;
+    @include responsive(600px) {
+        font-size: 5.4rem;
+        line-height: 55px;
+    }
+    @include responsive(468px) {
+        font-size: 4.4rem;
+    }
+}
