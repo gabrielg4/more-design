@@ -91,6 +91,18 @@
                         bottom: 0;
                         right: -6rem;
                     }
+                    &.three {
+                        top: 63px;
+                        left: 47px;
+                        z-index: 4;
+                        animation: left 6s infinite;
+                    }
+                    &.color {
+                        z-index: 6;
+                        top: 180px;
+                        left: 100px;
+                        animation: up 6s infinite;
+                    }
                 }
             }
         }
@@ -125,6 +137,7 @@
                        &.one {
                            height: 46.9rem;
                        }
+                       
                    }
                }
            }
